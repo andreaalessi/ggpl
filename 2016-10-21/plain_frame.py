@@ -1,10 +1,5 @@
 from pyplasm import *
 
-""" pX larghezza pilastro
-	pY profondità pilastro 
-	bY profondità trave
-"""
-
 def structure(distancesPillars, interstoryHeights, pX, pY, bY):
 
 	pillarXValue = []
@@ -47,6 +42,3 @@ def structure(distancesPillars, interstoryHeights, pX, pY, bY):
 	pillarBeams = STRUCT([pillar, beams])
 
 	return pillarBeams
-
-result = structure([1,1,1], [2,2,2,2], .2, .2, .2)
-VIEW(result)
